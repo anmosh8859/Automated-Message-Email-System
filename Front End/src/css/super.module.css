@@ -1,0 +1,189 @@
+.container {
+  display: flex;
+}
+
+.section1, .section2, .section3 {
+  flex: 1;
+  padding: 20px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 600px;
+}
+
+.section2 {
+  position: relative; /* Set position relative to position Admin Register */
+}
+
+.notification {
+  background-color: lightblue;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  position: relative;
+}
+
+.notification h3 {
+  margin-top: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.notification ul {
+  padding-left: 20px;
+}
+
+.notification ul li {
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+.dots {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.changeDpButton {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.section1 ul {
+  list-style-type: none;
+}
+
+.section1 ul li {
+  margin-left: 1.5em;
+}
+
+/* Add styles for the message box */
+.messageBox {
+  position: fixed;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: -88px;
+    margin-right: -779px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 20px;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #0056b3;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.closeIcondp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  z-index: 999;
+}
+
+.closeIcon:hover {
+  color: #ff0000;
+}
+
+.buttondp{
+  top:10px;
+  right:10px;
+  margin-left: 250px;
+}
+
+.isAddAdminClicked{
+  cursor: pointer;
+}
+

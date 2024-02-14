@@ -28,7 +28,7 @@ public class MessageEmailConfiguration {
         List<User> users = userService.getAllUsers();
         users.stream().forEach(user->{
             emailService.sendMail(user.getEmail(),"Test","This is a generated scheduled email!");
-            messageService.sendMessage("HappyBirthday",user.getPhone());
+            messageService.sendMessage("Happy Birthday",user.getPhone());
         });
     }
 }

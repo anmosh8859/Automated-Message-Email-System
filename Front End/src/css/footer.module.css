@@ -1,0 +1,31 @@
+/* footer.module.css */
+
+.footer {
+  background-color: #3498db; /* Match the footer color with the header for consistency */
+  color: white;
+  padding: 30px; /* Increase padding for better spacing */
+  margin-top: 75px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around; /* Center the content and increase space between sections */
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.footerSection {
+  flex: 1;
+  margin: 0 20px 20px 0; /* Adjust margin for better spacing */
+}
+
+.footerSection h5 {
+  font-size: 20px; /* Increase heading font size for emphasis */
+  margin-bottom: 15px; /* Increase space between heading and content */
+  color: #ecf0f1; /* Adjust heading color for better visibility */
+}
+
+.footerSection p {
+  margin: 0;
+}
+
+/* Add more styles as needed */

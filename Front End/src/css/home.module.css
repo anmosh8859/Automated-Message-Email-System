@@ -1,0 +1,20 @@
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 350px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headline {
+  font-size: 24px;
+  color: white; /* Adjust the color to fit your design */
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 8px;
+  margin-bottom:300px;
+}
+.home-container {
+  filter: brightness(60%); /* Adjust the brightness percentage as needed */
+}

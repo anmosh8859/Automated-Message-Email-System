@@ -1,0 +1,40 @@
+/* header.module.css */
+
+.navbar {
+  background-color: #3498db; /* Use a color associated with education, like a blue tone */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.logo {
+  /* Consider adding a logo to represent your education system */
+  width: 40px; /* Adjust the size as needed */
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand {
+  color: white;
+  font-size: 24px;
+  font-weight: bold; /* Make the brand name stand out more */
+}
+
+.navLinks {
+  display: flex;
+}
+
+.navItem {
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Add a smooth transition effect for hover */
+}
+
+.navItem:hover {
+  color: #ecf0f1; /* Change color on hover for better user interaction */
+}
+
+/* Add more styles as needed */
