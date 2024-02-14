@@ -1,4 +1,4 @@
-package com.scheduler.AutomatedMailMessageScheduler.configuratin;
+package com.scheduler.AutomatedMailMessageScheduler.configuration;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

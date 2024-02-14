@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -19,6 +20,7 @@ public class User {
     String id;
     String username;
     String password;
+    @Indexed(unique = true)
     @Field(name="email_id")
     String email;
     @Field(name = "phone_number")

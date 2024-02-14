@@ -17,18 +17,22 @@ public class UserServiceImpl implements UserService{
 
     private UserRepository repository;
 
+    public String encryptMD5(String pass) throws NoSuchAlgorithmException {
+        MessageDigest md = MessageDigest.getInstance("MD5");
+        md.update(pass.getBytes());
+        byte[] digest = md.digest();
+        BigInteger no = new BigInteger(1, digest);
+        pass = no.toString(16);
+        while (pass.length() < 32) {
+            pass = "0" + pass;
+        }
+        return pass.toUpperCase();
+    }
+
     public User createUser(User user){
         String pass = user.getPassword();
         try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update(pass.getBytes());
-            byte[] digest = md.digest();
-            BigInteger no = new BigInteger(1, digest);
-            pass = no.toString(16);
-            while (pass.length() < 32) {
-                pass = "0" + pass;
-            }
-            user.setPassword(pass.toUpperCase());
+            user.setPassword(encryptMD5(pass));
         } catch (NoSuchAlgorithmException e) {
             user = null;
         }
@@ -38,5 +42,10 @@ public class UserServiceImpl implements UserService{
 
     public List<User> getAllUsers() {
         return repository.findAll();
+    }
+
+    @Override
+    public User getUserByEmail(String email) {
+        return repository.getUserByEmail(email);
     }
 }

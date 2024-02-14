@@ -6,6 +6,9 @@ import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 public interface UserService{
-    User createUser(User user) throws NoSuchAlgorithmException;
+    String encryptMD5(String pass) throws NoSuchAlgorithmException;
+    User createUser(User user);
     List<User> getAllUsers();
+    User getUserByEmail(String email);
+
 }
